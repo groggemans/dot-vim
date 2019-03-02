@@ -115,6 +115,8 @@ Plug 'tclem/vim-arduino'
 " CFEngine-3 support
 Plug 'neilhwatson/vim_cf3'
 
+" toml support
+Plug 'cespare/vim-toml'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Interface
