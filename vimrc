@@ -375,7 +375,7 @@ nnoremap <leader>e :call ToggleOverLength()<CR>
     map  / <Plug>(easymotion-sn)
     omap / <Plug>(easymotion-tn)
     map  n <Plug>(easymotion-next)
-    map  m <Plug>(easymotion-prev)
+    map  N <Plug>(easymotion-prev)
 
     " Prevent repetitive hjkl
     map <Leader>l <Plug>(easymotion-lineforward)
