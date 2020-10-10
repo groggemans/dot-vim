@@ -321,6 +321,13 @@ nnoremap <leader>e :call ToggleOverLength()<CR>
         autocmd BufNewFile,BufRead *.hcl set ft=terraform
     augroup END
 
+" Jenkins files
+"
+    augroup Jenkins
+        autocmd!
+        autocmd BufNewFile,BufRead Jenkinsfile set ft=groovy
+    augroup END
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin settings
 
