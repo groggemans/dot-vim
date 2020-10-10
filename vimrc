@@ -313,6 +313,14 @@ nnoremap <leader>e :call ToggleOverLength()<CR>
         autocmd BufNewFile,BufRead *.nomad set ft=terraform
     augroup END
 
+" Packer files
+"
+    augroup HCL
+        autocmd!
+        " Force hcl syntax through terraform plugin
+        autocmd BufNewFile,BufRead *.hcl set ft=terraform
+    augroup END
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin settings
 
