@@ -309,15 +309,20 @@ nnoremap <leader>e :call ToggleOverLength()<CR>
 "
     augroup Nomad
         autocmd!
-        " Force hcl syntax through terraform plugin
         autocmd BufNewFile,BufRead *.nomad set ft=hcl ts=2 sw=2
+    augroup END
+
+" Terraform files
+"
+    augroup Terraform
+        autocmd!
+        autocmd BufNewFile,BufRead *.tf set ft=terraform ts=2 sw=2
     augroup END
 
 " Packer files
 "
     augroup HCL
         autocmd!
-        " Force hcl syntax through terraform plugin
         autocmd BufNewFile,BufRead *.hcl set ft=hcl ts=2 sw=2
     augroup END
 
@@ -406,7 +411,20 @@ nnoremap <leader>e :call ToggleOverLength()<CR>
 " coc.vim
 "
     " coc plugins
-    let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-markdownlint', 'coc-snippets', 'coc-sh', 'coc-clangd', 'coc-css', 'coc-tsserver', 'coc-html', 'coc-go', 'coc-pyright']
+    let g:coc_global_extensions = [
+        \ 'coc-calc',
+        \ 'coc-yank',
+        \ 'coc-json',
+        \ 'coc-git',
+        \ 'coc-markdownlint',
+        \ 'coc-snippets',
+        \ 'coc-sh',
+        \ 'coc-clangd',
+        \ 'coc-css',
+        \ 'coc-tsserver',
+        \ 'coc-html',
+        \ 'coc-go',
+        \ 'coc-pyright' ]
 
     " Use tab for trigger completion with characters ahead and navigate.
     " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
