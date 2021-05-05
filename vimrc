@@ -1,10 +1,4 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" @file vimrc
-" @date May, 2015
-" @author G. Roggemans <g.roggemans@grog.be>
-" @copyright Copyright (c) GROG [https://grog.be] 2015, All Rights Reserved
-" @license MIT
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " This vim configuration is not vi compatible
 set nocompatible
@@ -366,26 +360,10 @@ nnoremap <leader>e :call ToggleOverLength()<CR>
     let g:neocomplete#sources#omni#input_patterns.cpp =
     \ '[^.[:digit:] *\t]\%(\.\|->\)\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
 
-" DelimitMate
-"
-    "" Change Backspace behavior
-    "imap <BS> <Plug>delimitMateS-BS
-
 " NERDCommenter
 "
     " Map comment toggle
     nnoremap <Leader>ct <Plug>NERDCommenterToggle
-
-" Gundo
-"
-    "" Map window togel
-    "nnoremap <Leader>u :GundoToggle<CR>
-
-    "let g:gundo_width = 45                      " Window width
-    "let g:gundo_preview_bottom = 1              " Preview on the bottom
-    "let g:gundo_preview_height = 15             " Window height
-    "let g:gundo_right = 1                       " Right side
-    "let g:gundo_close_on_revert = 1             " Close after revert
 
 " EasyMotion
 "
@@ -581,23 +559,6 @@ nnoremap <leader>e :call ToggleOverLength()<CR>
 
     "inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\<CR>"
 
-" YouCompleteMe
-"
-    "" Enable completion in comments
-    "let g:ycm_complete_in_comments = 1
-
-    "" Collect from strings and comments
-    "let g:ycm_collect_identifiers_from_comments_and_strings = 1
-
-    "" Collect from tag files
-    "let g:ycm_collect_identifiers_from_tags_files = 1
-
-    "" Seed keywords for file type
-    "let g:ycm_seed_identifiers_with_syntax = 1
-
-    "" Auto close preview
-    "let g:ycm_autoclose_preview_window_after_completion = 1
-
 " Vim Tmux Navigator
 "
     autocmd FocusGained * silent redraw!             " Fix artifacts
@@ -656,16 +617,9 @@ nnoremap <leader>e :call ToggleOverLength()<CR>
     nnoremap <Leader>tt :TagbarToggle<CR>
     nnoremap <Leader>ta :TagbarOpenAutoClose<CR>
 
-" Table Mode
-"
-    "let g:table_mode_corner = '|'
-    "let g:table_mode_disable_mappings = 1
-    "nnoremap <Leader>tm :TableModeToggle <CR>
-    "nnoremap <Leader>tr :TableModeRealign <CR>
-
 " Vim-GO
 "
-    "let g:go_version_warning = 0
+    let g:go_version_warning = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Local config
