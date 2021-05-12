@@ -18,11 +18,6 @@ pkg.install() {
     # Run vim and install plugins
     PKG_PATH="$PKG_PATH"\
         vim +PlugInstall +qall -u "$PKG_PATH/install.vim"
-
-    # Install YouCompleteMe
-    if [ -f "$PKG_PATH/plugged/youcompleteme/install.py" ]; then
-        "$PKG_PATH/plugged/youcompleteme/install.py"
-    fi
 }
 
 ##############################################################################
