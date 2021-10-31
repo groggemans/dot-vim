@@ -29,7 +29,7 @@ Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 
 " File explorer
-Plug 'preservim/nerdtree', { 'on': ['NERDTree', 'NERDTreeToggle'] }
+"Plug 'preservim/nerdtree', { 'on': ['NERDTree', 'NERDTreeToggle'] }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Completion
@@ -79,6 +79,9 @@ Plug 'plasticboy/vim-markdown'
 
 " toml support
 Plug 'cespare/vim-toml'
+
+" IEC 61131-3
+Plug 'jubnzv/IEC.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Interface

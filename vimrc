@@ -391,18 +391,22 @@ nnoremap <leader>e :call ToggleOverLength()<CR>
     " coc plugins
     let g:coc_global_extensions = [
         \ 'coc-calc',
-        \ 'coc-yank',
-        \ 'coc-json',
-        \ 'coc-git',
-        \ 'coc-markdownlint',
-        \ 'coc-snippets',
-        \ 'coc-sh',
         \ 'coc-clangd',
         \ 'coc-css',
-        \ 'coc-tsserver',
-        \ 'coc-html',
+        \ 'coc-explorer',
+        \ 'coc-git',
         \ 'coc-go',
-        \ 'coc-pyright' ]
+        \ 'coc-html',
+        \ 'coc-json',
+        \ 'coc-markdownlint',
+        \ 'coc-pyright',
+        \ 'coc-sh',
+        \ 'coc-snippets',
+        \ 'coc-tsserver',
+        \ 'coc-yank',
+        \ ]
+
+    nmap <Leader>e <Cmd>CocCommand explorer<CR>
 
     " Use tab for trigger completion with characters ahead and navigate.
     " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -582,9 +586,9 @@ nnoremap <leader>e :call ToggleOverLength()<CR>
 " NERDTree
 "
     " Map NERDTree open, close and toggle
-    nnoremap <Leader>no :NERDTree<CR>
-    nnoremap <Leader>nq :NERDTreeClose<CR>
-    nnoremap <Leader>nt :NERDTreeToggle<CR>
+    "nnoremap <Leader>no :NERDTree<CR>
+    "nnoremap <Leader>nq :NERDTreeClose<CR>
+    "nnoremap <Leader>nt :NERDTreeToggle<CR>
 
 " GitGutter
 "

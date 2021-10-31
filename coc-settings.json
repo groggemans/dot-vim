@@ -6,5 +6,15 @@
       "filetypes": ["terraform", "tf"],
       "initializationOptions": {}
     }
+  },
+  "markdownlint.config": {
+    "default": true,
+    "line-length" : {
+      "tables": false,
+      "code_blocks": false
+    },
+    "no-duplicate-header": {
+      "allow_different_nesting": true
+    }
   }
 }
