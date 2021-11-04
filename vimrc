@@ -404,6 +404,7 @@ nnoremap <leader>e :call ToggleOverLength()<CR>
         \ 'coc-snippets',
         \ 'coc-tsserver',
         \ 'coc-yank',
+        \ 'coc-yaml',
         \ ]
 
     nmap <Leader>e <Cmd>CocCommand explorer<CR>
