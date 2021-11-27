@@ -83,6 +83,9 @@ Plug 'cespare/vim-toml'
 " IEC 61131-3
 Plug 'jubnzv/IEC.vim'
 
+" PlantUML syntax support
+Plug 'aklt/plantuml-syntax'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Interface
 
