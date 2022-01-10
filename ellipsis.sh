@@ -52,7 +52,11 @@ pkg.pull() {
 
     # Update plugins (clean than install and update)
     PKG_PATH="$PKG_PATH"\
-        vim +PlugClean! +PlugInstall! +qall -u "$PKG_PATH/install.vim"
+        vim +PlugUpgrade +PlugClean! +PlugInstall! +PlugUpdate! +qall -u "$PKG_PATH/install.vim"
+
+    # Upgrade Coc packages
+    PKG_PATH="$PKG_PATH"\
+        vim +CocUpdate! +qall -u "$PKG_PATH/install.vim"
 }
 
 ##############################################################################
