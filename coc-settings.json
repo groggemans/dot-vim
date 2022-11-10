@@ -1,5 +1,6 @@
 {
-    "suggest.noselect": false,
+    "suggest.noselect": true,
+    "suggest.enablePreselect": false,
     "diagnostic.errorSign": "✘",
     "diagnostic.warningSign": "!",
     "diagnostic.infoSign": "?",
