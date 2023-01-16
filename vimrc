@@ -388,6 +388,8 @@ nnoremap <leader>e :call ToggleOverLength()<CR>
 
 " coc.vim
 "
+    let g:coc_disable_startup_warning = 1
+
     " coc plugins
     let g:coc_global_extensions = [
         \ 'coc-calc',
